@@ -1,0 +1,72 @@
+/*Intro styles*/
+.introduction {
+  width: 45vh;
+  margin: auto;
+  text-align: center;
+}
+.intro {
+  font-size: 3vh;
+}
+
+/*Grid styles*/
+.game {
+  width: 45vh;
+  height: 45vh;
+  margin: auto;
+
+  background-image: url("Images/board.png");
+  background-size: 45vh 45vh;
+
+  display: grid;
+  grid-template-columns: 15vh 15vh 15vh;
+  grid-template-rows: 15vh 15vh 15vh;
+  gap: 0;
+}
+
+/*The point here is to have 2 class with CSS animation one for red and one for yellow and when you click on a div, depending on the player it appends the class to that div's class list*/
+.red {
+  animation-name: redAni;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes redAni {
+  from {
+    background-image: none;
+  }
+  to {
+    background-image: url("Images/red.png");
+    background-size: 10vh 10vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.yellow {
+  animation-name: yellowAni;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+@keyframes yellowAni {
+  from {
+    background-image: none;
+  }
+  to {
+    background-image: url("Images/yellow.png");
+    background-size: 10vh 10vh;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.result {
+  display: block;
+  width: 45vh;
+  margin: auto;
+  text-align: center;
+}
+.replay {
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  width: 15vh;
+  height: 5vh;
+}
