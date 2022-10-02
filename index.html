@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Tic Tac Toe Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!--Introduction div-->
+    <div class="introduction">
+      <h1 class="intro">Tic Tac Toe Game</h1>
+      <p class="intro">
+        The aim of the game is to try and beat the minimax AI which is pretty
+        much impossible.
+      </p>
+    </div>
+    <br />
+
+    <!--Game grid div-->
+    <div class="game">
+      <div class="square" id="0"></div>
+      <div class="square" id="1"></div>
+      <div class="square" id="2"></div>
+
+      <div class="square" id="3"></div>
+      <div class="square" id="4"></div>
+      <div class="square" id="5"></div>
+
+      <div class="square" id="6"></div>
+      <div class="square" id="7"></div>
+      <div class="square" id="8"></div>
+    </div>
+    <br />
+
+    <!--Result text div-->
+    <div class="result">
+      <p class="text"></p>
+      <button onClick="startGame()" class="replay">Replay</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
